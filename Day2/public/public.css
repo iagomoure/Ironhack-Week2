@@ -1,0 +1,19 @@
+h1 {
+  font-size: 22px;
+  text-align: center;
+}
+h2{
+  font-size: 18px;
+  text-align: center; 
+}
+
+p{
+  background-color: grey;
+  font-family: "Baskerville";
+  text-align: left;
+}
+
+img{
+  border-style: solid;
+  border-color: red;
+}

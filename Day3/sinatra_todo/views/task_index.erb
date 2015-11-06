@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TodoList - Tasks</title>
+	</head>
+	<body>
+		<h1>Welcome to the TodoList</h1>
+		<ul><% @tasks.each do |task| %>
+        <li> 
+          <form action="/complete_task" method="post">
+            <button type="checkbox" name="completed" value="id"></button>
+            <%= task.id %>
+            <%= task.content %>
+            <%= task.created_at %>
+          </form>
+        </li>
+      <% end %>
+    </ul>
+    <a href="/new_task">Add new task</a>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+<link rel="stylesheet" type="text/css" href="public.css">
+<% if Date.today.tuesday? %>
+	<h1>My First Sinatra</h1>
+	<h2><%= @gretting %></h2>
+	<p>Izzy Ironside is <strong>NOT</strong>
+		a fan of <%= Date.today%>
+	</p>
+	<img src="/image.png" alt="Image">
+	<b><%= Time.now.strftime("%H:%M:%S")%></b>
+<% end %>
